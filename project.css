@@ -9,6 +9,10 @@
 .all-description-text-color{
     color: var(--Dark-03, #727272);
 }
+/* main{
+    margin-left:16rem ;
+    margin-right: 16rem;
+} */
 .btn-primary {
     width: 180px;
     height: 64px;
@@ -21,12 +25,17 @@
     font-weight: 600;
     padding: auto;
     cursor: pointer;
+    
 }
+/* .btn-primary :hover{
+    background-color: green;
+} */
 .section-title {
     color: var(--Dark-01, #131313);
     font-size: 3rem;
     /* font-size: 45px; usaly root er font size 16 hoy tai eita jehetu 45px tai eta 3rem */
     font-weight: 700;
+    margin-bottom: 20px;   
 }
 
 /* header style  */
@@ -107,7 +116,7 @@ main {
 }
 
 .teams-img-container {
-
+    margin-left: 5rem ;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
@@ -138,6 +147,63 @@ main {
 }
 
 /* item style end  */
+
+/* feature  style  */
+.feature-picture-togather{
+    display: flex;
+    margin-top: 5rem;
+   
+    
+}
+
+.inline{
+    display: flex;
+}
+.line{
+   
+    margin-top: 40px;
+    margin-right:10px ;
+    width: 5px;
+height: 60px;
+background: #FF900E;
+}
+.feature-card{
+    padding: 30px;
+    width: 40rem;
+height: 10rem;
+border-radius: 8px;
+background: #FFF;
+box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+margin-bottom: 1.4rem;
+margin-right: 2rem;
+
+}
+
+.feature-card>h4{
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: #131313;
+    margin-bottom: 10px;
+}
+.feature-pic>img{
+    width:auto;
+    height: 70rem;
+    margin-right: 2rem;
+}
+.featur-btn{
+    width:15rem;
+height: 8rem;
+border-radius: 8px;
+padding: 2.6rem;
+margin-right: 15rem;
+}
+#year{
+    color: #FFF;
+text-align: center;
+font-size: 2rem;
+font-weight: 700;
+
+}
 
 /* fact style  */
 .facts-card-container{
@@ -184,7 +250,8 @@ font-weight: 600;
 
     nav,
     .teams-container ,
-    .facts-card-container{
+    .facts-card-container,
+    .feature-picture-togather{
         flex-direction: column;
     }
     .teams-img-container{
@@ -204,15 +271,24 @@ font-weight: 600;
     .content-box{
         width: 100%;
     }
+    .line{
+        height:8rem ;
+    }
+    main{
+        margin-left: 2rem;
+    }
 }
 
 /* mediam devices  */
 @media screen and (min-width:576px) and (max-width:992px) {
-    nav,.teams-container {
+    nav,.teams-container, .feature-picture-togather{
         flex-direction: column;
     }
 
     header {
         padding: 50px;
+    }
+    main{
+        margin-left: 2rem;
     }
 }
