@@ -10,13 +10,13 @@
     height: 64px;
     border-radius: 8px;
     background: #FF900E;
-   border: 0;
+    border: 0;
     color: #FFF;
-text-align: center;
-font-size: 1.25rem;
-font-weight: 600;
-padding: auto;
-cursor: pointer;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 600;
+    padding: auto;
+    cursor: pointer;
 }
 
 /* header style  */
@@ -63,73 +63,101 @@ nav li a {
 
 /* banner style  */
 
-.banner-content{
+.banner-content {
     max-width: 800px;
     text-align: center;
     margin: 0 auto;
 }
 
-.banner-title{
+.banner-title {
     font-size: 3.5rem;
     font-weight: 700;
     color: #131313;
 }
+
 .banner-description {
     color: var(--Dark-03, #727272);
     font-size: 16px;
     font-weight: 400;
-  
+
 }
 
-.banner-pic{
+.banner-pic {
     margin-top: 20px;
-   width: 100%;
+    width: 100%;
 }
 
 /* responsive style  */
 
 @media screen and (max-width:576px) {
-    header{
-        padding:20px;
+    header {
+        padding: 20px;
     }
-    nav{
+
+    nav {
         flex-direction: column;
     }
 }
 
 /* mediam devices  */
 @media screen and (min-width:576px) and (max-width:992px) {
-    nav{
+    nav {
         flex-direction: column;
     }
-    header{
-        padding:50px;
+
+    header {
+        padding: 50px;
     }
 }
 
 /* main style  */
 
-main{
+main {
     max-width: 1440px;
     margin: 0 auto;
 }
+
 /* teams style  */
-.teams-container{
+.teams-container {
     margin-top: 60px;
     display: flex;
     align-items: center;
 }
-.teams-img-container{
-   
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
- gap: 1.5rem;
-} 
 
-.teams-content{
-    padding-right:70px ;
+.teams-img-container {
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.teams-content {
+    padding-right: 70px;
     padding-left: 70px;
 }
-.teams-title{
+
+.teams-title {
     font-size: 2.9rem;
 }
+
+.quick-list {
+    color: var(--Dark-03, #727272);
+    font-weight: 500;
+}
+
+.our {
+    color: var(--Dark-01, #131313);
+    font-weight: 700;
+}
+
+.text-feature {
+    color: #FF900E;
+    font-weight: 700;
+}
+.teams-description{
+    color: var(--Dark-03, #727272);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px; /* 162.5% */ 
+}
+/* item style end  */
