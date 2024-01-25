@@ -1,6 +1,7 @@
 /* for font family  */
 @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@600&family=Merriweather:wght@400;700;900&family=Open+Sans:ital,wght@0,700;0,800;1,700&family=Work+Sans:wght@400;600;700&display=swap');
-
+ 
+/* shared style  */
 * {
     font-family: 'Work Sans', sans-serif;
 }
@@ -21,6 +22,12 @@
     padding: auto;
     cursor: pointer;
 }
+.section-title {
+    color: var(--Dark-01, #131313);
+    font-size: 3rem;
+    /* font-size: 45px; usaly root er font size 16 hoy tai eita jehetu 45px tai eta 3rem */
+    font-weight: 700;
+}
 
 /* header style  */
 header {
@@ -36,12 +43,7 @@ nav {
 
 }
 
-.nav-title {
-    color: var(--Dark-01, #131313);
-    font-size: 3rem;
-    /* font-size: 45px; usaly root er font size 16 hoy tai eita jehetu 45px tai eta 3rem */
-    font-weight: 700;
-}
+
 
 nav>ul {
     display: flex;
@@ -137,7 +139,41 @@ main {
 
 /* item style end  */
 
+/* fact style  */
+.facts-card-container{
+    display: flex;
+    gap: 5rem;
+    justify-content: center;
 
+}
+.content-box{
+    width: 40rem;
+}
+.card{
+    height: 15rem;
+    width: 15rem;
+    border-radius: 8px;
+border: 1px solid #FF900E;
+text-align: center;
+
+}
+.card>img{
+    width: 2.7rem;
+    height: 2.7rem;
+  margin-top: 3rem;
+}
+.card-stats{
+    font-size: 2.9rem;
+    font-weight: 600;
+    margin-top: .8rem;
+    margin-bottom: .5rem;
+    color: var(--Dark-02, #424242);
+}
+.card-title{
+    color: var(--Dark-03, #727272);
+font-size: 1.3rem;
+font-weight: 600;
+}
 
 /* responsive style  */
 
@@ -147,16 +183,26 @@ main {
     }
 
     nav,
-    .teams-container {
+    .teams-container ,
+    .facts-card-container{
         flex-direction: column;
     }
     .teams-img-container{
         grid-template-columns: repeat(1,1fr);
-        width: 100%;
+        width:80%;
     }
-    .teams-content{
+    .teams-content,.facts-card-container{
         padding-left: 20px;
         padding-right: 20px;
+    }
+    .facts-card-container{
+        gap: 20px;
+    }
+    .card{
+        width: 100%;
+    }
+    .content-box{
+        width: 100%;
     }
 }
 
