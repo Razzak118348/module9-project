@@ -1,0 +1,108 @@
+/* for font family  */
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@600&family=Merriweather:wght@400;700;900&family=Open+Sans:ital,wght@0,700;0,800;1,700&family=Work+Sans:wght@400;600;700&display=swap');
+
+* {
+    font-family: 'Work Sans', sans-serif;
+}
+
+.btn-primary {
+    width: 180px;
+    height: 64px;
+    border-radius: 8px;
+    background: #FF900E;
+   border: 0;
+    color: #FFF;
+text-align: center;
+font-size: 1.25rem;
+font-weight: 600;
+padding: auto;
+cursor: pointer;
+}
+
+/* header style  */
+header {
+    background: rgba(255, 144, 14, 0.10);
+    padding: 50px 240px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    /* horyzontal center e niye aste hole nicher commund*/
+    align-items: center;
+
+}
+
+.nav-title {
+    color: var(--Dark-01, #131313);
+    font-size: 3rem;
+    /* font-size: 45px; usaly root er font size 16 hoy tai eita jehetu 45px tai eta 3rem */
+    font-weight: 700;
+}
+
+nav>ul {
+    display: flex;
+}
+
+nav li {
+    list-style: none;
+    margin-right: 30px;
+
+    font-size: 18px;
+
+    font-weight: 500;
+    line-height: 26px;
+    /* 144.444% */
+}
+
+nav li a {
+    text-decoration: none;
+    color: var(--Dark-02, #424242);
+
+}
+
+/* banner style  */
+
+.banner-content{
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.banner-title{
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #131313;
+}
+.banner-description {
+    color: var(--Dark-03, #727272);
+    font-size: 16px;
+    font-weight: 400;
+  
+}
+
+.banner-pic{
+    margin-top: 20px;
+   width: 100%;
+}
+
+/* responsive style  */
+
+@media screen and (max-width:576px) {
+    header{
+        padding:20px;
+    }
+    nav{
+        flex-direction: column;
+    }
+}
+
+/* mediam devices  */
+@media screen and (min-width:576px) and (max-width:992px) {
+    nav{
+        flex-direction: column;
+    }
+    header{
+        padding:50px;
+    }
+}
