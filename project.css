@@ -209,7 +209,7 @@ font-weight: 700;
 .facts-card-container{
     display: flex;
     gap: 5rem;
-    justify-content: center;
+    justify-content: space-around;
 
 }
 .content-box{
@@ -241,6 +241,33 @@ font-size: 1.3rem;
 font-weight: 600;
 }
 
+/* sponsor style  */
+.sponsor{
+    text-align: center;
+}
+.sponsors-img-container{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+.sponsors-img-container img{
+    width: 165px;
+}
+
+/* footer style  */
+footer{
+    width: 1440px;
+height: 100px;
+border-radius: 8px;
+background: #FFF4E7;
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+/* text-align: ce; */
+
+margin: 100px auto;
+
+}
 /* responsive style  */
 
 @media screen and (max-width:576px) {
@@ -251,12 +278,15 @@ font-weight: 600;
     nav,
     .teams-container ,
     .facts-card-container,
-    .feature-picture-togather{
+    .feature-picture-togather,
+.sponsors-img-container,footer
+   {
         flex-direction: column;
     }
     .teams-img-container{
         grid-template-columns: repeat(1,1fr);
         width:80%;
+        margin-left: 10px;
     }
     .teams-content,.facts-card-container{
         padding-left: 20px;
@@ -264,6 +294,14 @@ font-weight: 600;
     }
     .facts-card-container{
         gap: 20px;
+    }
+    .feature-card{
+        width: auto;
+    }
+    .feature-pic>img{
+       width: auto;
+       height: 37rem;
+
     }
     .card{
         width: 100%;
@@ -274,6 +312,14 @@ font-weight: 600;
     .line{
         height:8rem ;
     }
+    .sponsors-img-container{
+        gap: 50px;
+        align-items: center;
+    }
+    footer{
+        width: auto;
+        justify-content: space-evenly;
+    }
     main{
         margin-left: 2rem;
     }
@@ -281,14 +327,24 @@ font-weight: 600;
 
 /* mediam devices  */
 @media screen and (min-width:576px) and (max-width:992px) {
-    nav,.teams-container, .feature-picture-togather{
+    nav,.teams-container, .feature-picture-togather,.sponsors-img-container,footer{
         flex-direction: column;
     }
-
+    .sponsors-img-container{
+        gap: 50px;
+       align-items: center;
+    }
     header {
         padding: 50px;
     }
     main{
         margin-left: 2rem;
+    }
+    .line{
+        height:8rem ;
+    }
+    footer{
+        width: auto;
+        justify-content: space-evenly;
     }
 }
